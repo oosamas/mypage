@@ -1,0 +1,65 @@
+<% provide(:title, "Osama Saddique") %>
+
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+      <title><% full_title (yield(:title)) %></title>
+    </head>
+
+    <body>
+      <!-- navbar -->
+      <nav class="navbar fixed-top"> <!--navbar-light bg-light" -->
+        <div class = "navbar-nav mr-auto">
+          <a class="navbar-brand" href="#vector-me">OSAMA SADDIQUE</a>
+        </div>
+
+        <a href="https://www.linkedin.com/in/osaddique" aria-label="LinkedIn Profile">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.github.com/oosamas" aria-label="GitHub Profile">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        
+        <%# <i class="fas fa-file", aria-hidden="true", aria-label="Resume"> %>
+          <%= link_to '<i class="fas fa-file", aria-hidden="true", aria-label="Resume"></i>'.html_safe, "/OsResume.pdf" %> 
+        <%# <a href=<%= pdfjs.full_path(file:"/public/OsResume.pdf") aria-label="Resume"> %>
+          <%# <i aria-hidden="true" class="fas fa-file"></i> %>
+        <%# </a>  %>
+        
+      </nav>
+      
+      <div class = "container-fluid", style="background-color:pink">
+        <!-- About Me -->  
+          <div id="text">
+            <center>
+              <p>Hello, world! I'm a software developer</p>
+            </center>
+          </div>
+        <div id="vector-me">
+          <center>
+            <%=image_tag "header2.png", :size=>"580x620"%>
+          </center>
+          <br/><br/><br/>
+        </div>
+            
+      </div>  
+      <!--static-resume -->
+      <div class= "container">
+        <div id="resume">
+          <%= image_tag "homePage.png", :size=>"980x720" %>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    </body>
+
+  </html>
