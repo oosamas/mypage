@@ -1,13 +1,7 @@
 
 <!DOCTYPE html>
   <html>
-
     <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
     </head>
 
     <body>
@@ -19,11 +13,14 @@
 
         <a href="https://www.linkedin.com/in/osaddique" aria-label="LinkedIn Profile">
           <i aria-hidden="true" class="fab fa-linkedin"></i>
+          <span id="linkedin">LinkedIn</span>
         </a>
         <a href="https://www.github.com/oosamas" aria-label="GitHub Profile">
           <i aria-hidden="true" class="fab fa-github"></i>
+          <span id="github">GitHub</span>
         </a>
-        <%= link_to '<i class="fas fa-file", aria-hidden="true", aria-label="Resume"></i>'.html_safe, "/OsResume.pdf" %> 
+        
+        <%= link_to '<i class="fas fa-file", aria-hidden="true", aria-label="Resume"></i><span id="resume1">Resume</span>'.html_safe, "/OsResume.pdf" %> 
         
       </nav>
       

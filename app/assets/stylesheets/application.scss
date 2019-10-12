@@ -1,6 +1,7 @@
 @import "bootstrap";
 
 
+
  /* The navigation bar */
  .navbar {
   overflow: hidden;
@@ -43,4 +44,31 @@
 #resume {
   padding-top: 100px;
 
+}
+
+#resume1 {
+  float: right;
+  text-align: center;
+  padding: 1px 1px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 10px;
+}
+
+.navbar #github {
+  text-align: center;
+  float: right;
+  // padding-left: -500px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 10px;
+}
+
+#linkedin {
+  float: right;
+  text-align: center;
+  padding: 1px 1px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 10px;
 }
